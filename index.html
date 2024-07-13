@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950">
+  <header>
+    <div class="flex  flex-col mx-auto ">
+      <div class="relative flex bg-zinc-950 flex-wrap items-center justify-between w-full  group py-5 shrink-0">
+          <div class="ml-3 lg:ml-14">
+              <img class="h-8"
+                  src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-nav-0.png">
+          </div>
+          <div class="items-center justify-between hidden mr-14 gap-12 text-black md:flex">
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-grey-900"
+                  href="javascript:void(0)">Product</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-grey-900"
+                  href="javascript:void(0)">Features</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-grey-900"
+                  href="javascript:void(0)">Pricing</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-grey-900"
+                  href="javascript:void(0)">Company</a>
+          </div>
+          <!-- <div class="items-center hidden gap-8 md:flex">
+              <button class="flex items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300">Log In</button>
+              <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">
+                  Sign Up
+              </button>
+          </div> -->
+          <button onclick="(() => { this.closest('.group').classList.toggle('open')})()" class="flex  mr-3 md:hidden">
+
+              <svg class="w-8 h-8 text-gray-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+              </svg>
+
+          </button>
+          <div
+              class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-zinc-950 max-h-0 group-[.open]:py-4 px-4 z-10 group-[.open]:max-h-64 top-full">
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-gray-100"
+                  href="javascript:void(0)">Product</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-gray-100"
+                  href="javascript:void(0)">Features</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-gray-100"
+                  href="javascript:void(0)">Pricing</a>
+              <a class="text-sm font-normal text-gray-100 hover:text-dark-gray-100"
+                  href="javascript:void(0)">Company</a>
+          </div>
+      </div>
+  </div>
+    <div class="w-full bg-center bg-cover h-[20rem]"
+      style="background-image: url('j.jpg');">
+      <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
+        <div class="text-center">
+          <h1 class="text-3xl font-semibold text-white lg:text-4xl">Train Like a Hero at <br>Titan Fitness Hub</h1>
+          <button
+            class=" px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Start
+            project</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- about -->
+    <section class="bg-zinc-950 ">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light sm:text-lg text-gray-200">
+          <h2 class="mb-4 text-4xl tracking-tight font-bold text-white">We didn't reinvent the
+            wheel</h2>
+          <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to
+            be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be
+            simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
+          <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and
+            quick.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img class="w-full rounded-lg"
+            src="gordon-cowie-iY1MS1hKRDA-unsplash.jpg"
+            alt="office content 1">
+          <img class="mt-4 w-full lg:mt-10 rounded-lg"
+            src="pexels-leonardho-1552106.jpg"
+            alt="office content 2">
+        </div>
+      </div>
+      <!-- services -->
+      <section class="bg-zinc-950">
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold capitalize lg:text-3xl text-white">
+            Explore Our 
+            
+             <span class=" text-red-600 ">Services</span></h1>
+
+          <p class="mt-4 xl:mt-6 text-gray-300">
+            Discover what makes our gym exceptional. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+          </p>
+
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+            <div class="p-8 space-y-3 border-2 bg-black border-red-600 rounded-xl">
+              <span class="inline-block text-red-600 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </span>
+
+              <h1 class="text-xl text-white font-semibold capitalizetext-white">Personal Training</h1>
+
+              <p class="text-gray-300">
+                Achieve your fitness goals with tailored workouts and expert guidance from our certified trainers in personalized one-on-one sessions.
+              </p>
+
+              <a href="#"
+                class="inline-flex p-2 text-red-600 capitalize transition-colors duration-300 transform bg-zinc-950 rounded-full rtl:-scale-x-100 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="p-8 space-y-3 border-2 bg-black border-red-600 rounded-xl">
+              <span class="inline-block text-red-600 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </span>
+
+              <h1 class="text-xl font-semibold capitalize text-white">Group Fitness Classes</h1>
+
+              <p class="text-gray-300">
+                Join our dynamic group classes including Yoga, Pilates, Spin, Zumba, and Bootcamp, suitable for all fitness levels.
+              </p>
+
+              <a href="#"
+                class="inline-flex p-2 text-red-600 capitalize transition-colors duration-300 transform bg-zinc-950 rounded-full rtl:-scale-x-100 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+            <div class="p-8 space-y-3 border-2 bg-black border-red-600 rounded-xl">
+              <span class="inline-block text-red-600 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </span>
+
+              <h1 class="text-xl font-semibold capitalize text-white">Nutritional Guidance</h1>
+
+              <p class="text-gray-300">
+                Enhance your health with personalized meal plans, nutritional assessments, and expert advice on supplements and healthy eating habits.
+              </p>
+
+              <a href="#"
+                class="inline-flex p-2 text-red-600 capitalize transition-colors duration-300 transform bg-zinc-950 rounded-full rtl:-scale-x-100 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Services Section End -->
+      <section class="bg-zinc-950 ">
+        <div class="container px-6 py-8 mx-auto">
+          <h2 class="text-2xl font-semibold text-center capitalize lg:text-3xl text-white">Our <span class="text-red-600">Trainers</span>
+          </h2>
+
+          <div class="grid justify-center gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="w-full bg-black max-w-xs text-center">
+              <img class="object-cover object-center w-full h-96 mx-auto rounded-lg"
+                src="total-shape-lABFMWhnh4U-unsplash.jpg"
+                alt="avatar" />
+
+              <div class="py-2 px-6">
+                <h3 class="text-lg font-medium text-gray-200">Alex Johnson </h3>
+                <span class="mt-1 font-medium  text-gray-100">Strength and Conditioning Specialist</span>
+              </div>
+            </div>
+
+            <div class="w-full bg-black max-w-xs text-center">
+              <img class="object-cover object-center w-full h-96 mx-auto rounded-lg"
+                src="marvin-cors-O1iH3EmWvbM-unsplash.jpg"
+                alt="avatar" />
+
+              <div class="py-2 px-6">
+                <h3 class="text-lg font-medium text-gray-200">Sarah Mitchell</h3>
+                <span class="mt-1  font-medium  text-gray-100">High-Intensity Interval Training (HIIT) Coach</span>
+              </div>
+            </div>
+
+            <div class="w-full bg-black max-w-xs text-center">
+              <img class="object-cover object-center w-full h-96 mx-auto rounded-lg"
+                src="jakob-owens-qkQwDvRqQY8-unsplash.jpg"
+                alt="avatar" />
+
+              <div class="py-2 px-6">
+                <h3 class="text-lg font-medium text-gray-200">Mark Thompson </h3>
+                <span class="mt-1 font-medium text-gray-100">Certified Personal Trainer</span>
+              </div>
+            </div>
+
+            <div class="w-full bg-black max-w-xs text-center">
+              <img class="object-cover object-center w-full h-96 mx-auto rounded-lg"
+                src="training-828744_1280.jpg"
+                alt="avatar" />
+
+              <div class=" py-2 px-6">
+                <h3 class="text-lg font-medium text-gray-200">Emily Roberts</h3>
+                <span class="mt-1 px-3  font-medium text-gray-100"> Nutrition and Wellness Coach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- pricing -->
+    <div class="bg-zinc-950">
+      <div class="container px-6 py-8 mx-auto">
+          <h1 class="text-2xl font-semibold text-center capitalize lg:text-3xl text-white">Pricing Plan</h1>
+  
+          <p class="max-w-2xl mx-auto mt-4 text-center  xl:mt-6 text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas magni libero consequuntur voluptatum velit amet id repudiandae ea, deleniti laborum in neque eveniet.
+          </p>
+  
+          <div class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-4">
+              <div class="w-full p-8 space-y-8 text-center border rounded-lg border-gray-700">
+                  <p class="font-medium uppercase text-gray-300">Fitness Blitz <br>Package</p>
+  
+                  <h2 class="text-4xl font-semibold uppercase text-gray-100">
+                      $30
+                  </h2>
+  
+                  <p class="font-medium text-gray-300">1 Month</p>
+  
+                  <button class="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                      Start Now
+                  </button>
+              </div>
+  
+              <div class="w-full p-8 space-y-8 text-center border border-gray-700 rounded-lg">
+                  <p class="font-medium text-gray-200 uppercase">Strength Builder Package</p>
+  
+                  <h2 class="text-4xl font-semibold uppercase text-gray-100">
+                      $75
+                  </h2>
+  
+                  <p class="font-medium text-gray-200">3 Month</p>
+  
+                  <button class="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-gray-200 focus:ring-opacity-80">
+                      Start Now
+                  </button>
+              </div>
+  
+              <div class="w-full p-8 space-y-8 text-center border rounded-lg border-gray-700">
+                  <p class="font-medium uppercase text-gray-300">Transformation Package
+
+                  </p>
+  
+                  <h2 class="text-4xl font-semibold uppercase text-gray-100">
+                      $100
+                  </h2>
+  
+                  <p class="font-medium text-gray-300">Life time</p>
+  
+                  <button class="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                      Start Now
+                  </button>
+              </div>
+              <div class="w-full p-8 space-y-8 text-center border  rounded-lg border-gray-700">
+                <p class="font-medium  uppercase text-gray-300">Wellness Journey Package</p>
+
+                <h2 class="text-4xl font-semibold uppercase text-gray-100">
+                    $100
+                </h2>
+
+                <p class="font-medium text-gray-300">Life time</p>
+
+                <button class="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                    Start Now
+                </button>
+            </div>
+          </div>
+      </div>
+  </div>
+ 
+    <!-- gallery -->
+     
+ 
+    <section class="text-gray-400 bg-zinc-950 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-300">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="victor-freitas-vjkM-0m34KU-unsplash.jpg">
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="woman-1730325_1280.jpg">
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="pexels-olly-3838389.jpg">
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="pexels-jdgromov-4716816 (1).jpg">
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="pexels-dubtastic-19025671.jpg">
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img alt="gallery" class="w-full h-full object-cover object-center" src="cyan-cooper-zFmorSIqLHw-unsplash.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- testimonial -->
+    <section class="text-gray-300 bg-zinc-950 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-black  p-8 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+              </svg>
+              <p class="leading-relaxed mb-6">Joining this gym has been a game-changer for me. The personal trainers are knowledgeable and motivating, helping me achieve my fitness goals faster than I imagined. The group classes are also a lot of fun and keep me engaged. I highly recommend this gym to anyone serious about their health and fitness.</p>
+              <a class="inline-flex items-center">
+                <img alt="testimonial" src="cyan-cooper-zFmorSIqLHw-unsplash.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-white">Alex Johnson </span>
+                  <span class="text-gray-400 text-sm">Professional Athlete</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-black p-8 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+              </svg>
+              <p class="leading-relaxed mb-6">I've never felt better since I started following the nutritional guidance provided here. The meal plans are easy to follow and tailored to my needs. The trainers are incredibly supportive, and the variety of classes keeps things interesting. This gym truly offers a comprehensive approach to health and wellness.</p>
+              <a class="inline-flex items-center">
+                <img alt="testimonial" src="woman-1730325_1280.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-white">Emily Davis</span>
+                  <span class="text-gray-400 text-sm">Fitness Enthusiast</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta -->
+    <section class="text-gray-400 bg-zinc-950 body-font">
+     
+      <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+          <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Join our fitness community and achieve your goals. Contact us for membership plans and training options.</h1>
+          <button class="flex-shrink-0 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg mt-10 sm:mt-0">Contact Us Today</button>
+
+      </div>
+
+     </div>
+
+    </section>
+    <hr class="border-gray-700" />
+
+  </main>
+  <footer class="w-full py-5 sm:py-10 px-4 bg-zinc-950">
+    <!-- Container -->
+    <h2 class="sr-only">Footer</h2>
+    <div class="flex flex-col-reverse sm:flex-row md:justify-between lg:justify-around">
+  
+      <!-- :SITE NAME & SOCIAL NETWORKS -->
+      <div class="relative mt-14 sm:mt-0 px-5 flex flex-col justify-center items-center text-gray-500">
+        <!-- ::Site name -->
+        <h1 class="font-title text-4xl text-center font-semibold mt-auto">Fancy Footer 1</h1>
+        <!-- ::Social & copyright -->
+        <div class="mt-auto flex flex-col items-center">
+          <!-- :::Social -->
+          <span class="inline-flex mt-6 w-full justify-center md:justify-start md:w-auto">
+            <!-- Facebook -->
+            <a href="#link" class="text-gray-200">
+              <span class="sr-only">Facebook</span>
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a href="#link" class="ml-3 text-gray-200">
+              <span class="sr-only">Twitter</span>
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#link" class="ml-3 text-gray-200">
+              <span class="sr-only">Instagram</span>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <!-- Linkedin -->
+            <a href="#link" class="ml-3 text-gray-200">
+              <span class="sr-only">Linkedin</span>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+          <!-- :::Copyright -->
+          <span class="py-4 text-xs">&copy;2021, Fancy Tailwind All Rights Reserved.</span>
+        </div>
+        <!-- ::Mobile separator line -->
+        <span class="sm:hidden absolute -top-4 left-1/2 w-1/4 h-px bg-gray-400 transform -translate-x-1/2" aria-hidden="true"></span>
+      </div>
+  
+      <!-- :NAVIGATION -->
+      <div class="grid grid-cols-2 gap-5 text-gray-400">
+        <!-- ::Navigation -->
+        <div class="col-span-2 md:col-span-1 pb-0 md:py-3 px-4">
+          <h3 class="py-1.5 md:py-4 text-center sm:text-left text-xl text-gray-500 font-bold tracking-wide">Navigation</h3>
+          <nav class="flex justify-around md:flex-col font-medium list-none">
+            <li><a href="#link" class="hover:text-gray-200">Home</a></li>
+            <li><a href="#link" class="hover:text-gray-200">Solutions</a></li>
+            <li><a href="#link" class="hover:text-gray-200">Pricing</a></li>
+            <li><a href="#link" class="hover:text-gray-200">About</a></li>
+          </nav>
+        </div>
+        <!-- ::Address -->
+        <div class="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
+          <h3 class="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide">Address</h3>
+          <p class="md:w-48 text-center sm:text-left text-lg md:text-xl font-medium">101 Paradise Road, 97460 Fancy Island REUNION</p>
+        </div>
+        <!-- ::Email -->
+        <div class="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
+          <h3 class="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide">Fancy Company</h3>
+          <p class="inline-flex justify-center sm:justify-start text-sm text-gray-400 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <a href="#email">fancytailwind@paradise.com</a>
+          </p>
+        </div>
+        <!-- ::Phone -->
+        <div class="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
+          <h3 class="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide">Phone contact</h3>
+          <p class="inline-flex justify-center sm:justify-start text-sm text-gray-400 font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>209-217-2459</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
